@@ -1,0 +1,23 @@
+%pattern-bg {
+  position: absolute;
+  height: 50vh;
+  width: 50vw;
+}
+
+.top-pattern-bg {
+  @extend %pattern-bg;
+  top: 0;
+  left: 0;
+  background-image: url(/images/bg-pattern-top.svg);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.bottom-pattern-bg {
+  @extend %pattern-bg;
+  bottom: 0;
+  right: 0;
+  background-image: url(/images/bg-pattern-bottom.svg);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
